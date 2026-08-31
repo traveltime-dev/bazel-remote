@@ -212,7 +212,6 @@ func (r *remoteGrpcProxyCache) UploadFile(item backendproxy.UploadReq) {
 					// finish_write=true at the right position.
 					rn := ""
 					if firstIteration {
-						firstIteration = false
 						rn = resourceName
 					}
 					req := &bs.WriteRequest{
